@@ -1,0 +1,147 @@
+
+
+  
+
+body{
+  background-color: black;
+  display:flex;
+  position: absolute;
+   top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left:0px;
+}
+.logo-box{
+  background-image: url(logo2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  text-align: center;
+  width:50%;
+  float:left;
+}
+.parent{
+  background-image: url("goku.jpg");
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  float:right;
+  width:70%;
+  
+}
+.child1{
+  color: orange;
+  text-align:left;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  flex:2;
+
+  text-align: center;
+
+}
+.child2{
+  display : flex;
+  flex:2;
+  justify-content:space-around;
+  
+  text-align: center;
+ 
+}
+
+
+form{
+  width: 500px;
+  justify-content: center;
+}
+
+.user-deatails{
+  display: flex;
+  flex-wrap:wrap;
+
+  justify-content: space-around;
+}
+
+.child2 form .user-deatails .details{
+  color:orange;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  margin : 20px 0 12px 0;
+  width: calc(100% / 2-20px);
+}
+
+
+
+.child2 form .lbe{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-between;
+}
+
+
+
+.lbe{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+
+
+ .user-deatails .details input{
+  height: 25px;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font: size 16px;
+  border-bottom-width: 2px;
+  transition: all o.3s ease;
+
+ }
+
+ input:focus, input:valid{
+  border:#9b59b6
+ }
+.error-message{
+  margin-top: 30px;
+  color: aqua;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex:2;
+ 
+  text-align: center;
+}
+button{
+  color: aliceblue;
+  background-color:coral;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+}
+.child2 .para{
+
+  color:white;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex:2;
+ 
+  text-align: center;
+
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
